@@ -15,11 +15,6 @@ body {
   font-family: "Satoshi", sans-serif;
 }
 
-/* STYLE BODY */
-body {
-  font-family: "Satoshi", sans-serif;
-}
-
 /* STYLE NAVBAR */
 
 nav {
@@ -96,66 +91,8 @@ nav a {
   margin-left: 1rem;
 }
 
-.hero1 {
-  text-align: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: #fffdf9;
-}
 
-.hero1 .mood {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-left: 15rem;
-  margin-right: 15rem;
-  text-align: left;
-}
 
-.card {
-  border: 1px solid #dbdbdb;
-  margin-bottom: 3rem;
-}
-
-#card-1 {
-  background-color: #fac8ae;
-}
-
-#card-2 {
-  background-color: #a8b1ff;
-}
-
-#card-3 {
-  background-color: #66909a;
-}
-
-#card-4 {
-  background-color: #d5e576;
-}
-
-#card-5 {
-  background-color: #edc476;
-}
-
-#card-6 {
-  background-color: #c899c1;
-}
-
-.card:hover {
-  transform: scale(1.2);
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  width: 8rem;
-  border: 1px solid #dbdbdb;
-  border-radius: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  margin-bottom: 3rem;
-}
 
 /* STYLE FOOTER & COPYRIGHT */
 
