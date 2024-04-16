@@ -91,8 +91,184 @@ nav a {
   margin-left: 1rem;
 }
 
+.btn button {
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  color: #fff;
+  border: 1px solid #ff7c3f;
+  background-color: #ff7c3f;
+  border-radius: 15px;
+  width: 22rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-left: 1rem;
+}
 
+.btn button:hover {
+  background-color: #fff;
+  color: #ff7c3f;
+}
 
+/* STYLE CALENDAR FRAME 1 */
+.wrapper {
+  margin-left: 2rem;
+  width: 22rem;
+  height: 21rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+header .icons {
+  display: flex;
+}
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 32px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child {
+  margin-right: -10px;
+}
+header .icons span:hover {
+  background: #f2f2f2;
+}
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1rem;
+  line-height: 6px;
+}
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active {
+  color: #fff;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  background: #ff7c3f;
+}
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+
+/* STYLE CATEGORY */
+.category {
+  display: block;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.cat-1 {
+  margin-bottom: 0.5rem;
+}
+
+.cat-2 {
+  margin-bottom: 0.5rem;
+}
+
+.cat-3 {
+  margin-bottom: 0.5rem;
+}
+
+.cat-4 {
+  margin-bottom: 0.5rem;
+}
+
+.cat-5 {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.frame2 {
+  margin-left: 5rem;
+}
+
+.frame2 .btn-group {
+  margin-bottom: 2rem;
+}
+
+.frame2 .header {
+  display: flex;
+  gap: 35rem;
+}
+
+.btn-1 {
+  display: flex;
+  border-radius: 20px;
+  width: 8rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-1 .icons {
+  margin-right: 1rem;
+}
+table,
+th,
+td {
+  border: 1px solid #dbdbdb;
+  padding: 0.5rem;
+  width: 54rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: inline-flex;
+}
 
 /* STYLE FOOTER & COPYRIGHT */
 
@@ -160,4 +336,115 @@ hr {
   color: #000000;
   background-color: #000000;
   margin-bottom: 4rem;
+}
+
+/* STYLE POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.category {
+  display: block;
+}
+
+.category select {
+  background-color: #F5F7FA;
+  width: 25rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  margin-left: 2rem;
+}
+
+.date input {
+  background-color: #F5F7FA;
+  width: 25rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.time {
+  margin-left: 2rem;
+}
+
+.time select {
+  background-color: #F5F7FA;
+  width: 25rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.daily {
+  margin-left: 2rem;
+}
+
+.submit-btn {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  border: 1px solid #ff7c3f;
+  background-color: #ff7c3f;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-left: 2rem;
+  width: 25rem;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #ff7c3f;
+}
+
+.btn-tbl {
+  padding: 0.3rem;
+  font-size:0.8rem;
+  color: #fff;
+  border: 1px solid #2b2358;
+  background-color: #2b2358;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.td-none {
+  border: 0px;
 }
