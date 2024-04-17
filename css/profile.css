@@ -20,9 +20,16 @@ body {
 nav {
   max-width: 1500px;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  border-bottom: 4px solid #ebebeb;
 }
 
 nav img {
@@ -91,150 +98,6 @@ nav a {
   margin-left: 1rem;
 }
 
-/* MAIN */
-.profile {
-    width: 100%;
-    height: 340px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    display: inline-flex;
-}
-
-.wrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-    display: inline-flex
-}
-
-.button {
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
-    display: inline-flex
-}
-
-.button-edit {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    border-radius: 20px;
-    border: 1px #DBDBDB solid;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    display: flex
-}
-
-.button-settings {
-    padding: 18px;
-    border-radius: 20px;
-    border: 1px #DBDBDB solid;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    display: flex
-}
-
-.favourite {
-    width: 100%;
-    height: 572px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-    display: inline-flex
-}
-
-.button-fav {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background: #F8F7F4;
-    border-radius: 12px;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
-    border: 1px #DBDBDB solid;
-    display: inline-flex
-}
-
-.divider {
-    width: 100%;
-    height: 0px;
-    border: 1px #EAE9EC solid
-}
-
-.card-one {
-    flex: 1 1 0;
-    padding: 32px;
-    background: #F6FFDB;
-    border-radius: 12px;
-    border: 1px #DBDBDB solid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    display: inline-flex
-}
-
-.card-two {
-    flex: 1 1 0;
-    padding: 32px;
-    background: #FFD9B6;
-    border-radius: 12px;
-    border: 1px #DBDBDB solid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    display: inline-flex">
-
-}
-
-.card-three {
-    flex: 1 1 0;
-    padding: 32px;
-    background: #FFF3E6;
-    border-radius: 12px;
-    border: 1px #DBDBDB solid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    display: inline-flex
-}
-
-.card-text {
-    align-self: stretch;
-    color: #1B1B1B;
-    font-size: 24px;
-    font-family: Satoshi;
-    font-weight: 500;
-    line-height: 48px;
-    word-wrap: break-word
-}
-
-.card-fav {
-    align-self: stretch;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-    display: inline-flex
-}
-
 /* STYLE FOOTER & COPYRIGHT */
 
 footer {
@@ -301,4 +164,147 @@ hr {
   color: #000000;
   background-color: #000000;
   margin-bottom: 4rem;
+}
+
+/* MAIN */
+.profile {
+    width: 100%;
+    height: 340px;
+    padding-left: 120px;
+    padding-right: 120px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    display: inline-flex;
+    margin-top: 3rem;
+}
+
+.wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    display: inline-flex;
+}
+
+.button {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    display: inline-flex;
+}
+
+.button-edit {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 20px;
+    border: 1px #DBDBDB solid;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.button-settings {
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px #DBDBDB solid;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.favourite {
+    width: 100%;
+    height: 572px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.button-fav {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #F8F7F4;
+    border-radius: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    border: 1px #DBDBDB solid;
+    display: inline-flex;
+}
+
+.divider {
+    width: 100%;
+    height: 0px;
+    border: 1px #EAE9EC solid;
+}
+
+.card-one {
+    flex: 1 1 0;
+    padding: 32px;
+    background: #F6FFDB;
+    border-radius: 12px;
+    border: 1px #DBDBDB solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    display: inline-flex;
+}
+
+.card-two {
+    flex: 1 1 0;
+    padding: 32px;
+    background: #FFD9B6;
+    border-radius: 12px;
+    border: 1px #DBDBDB solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    display: inline-flex;
+
+}
+
+.card-three {
+    flex: 1 1 0;
+    padding: 32px;
+    background: #FFF3E6;
+    border-radius: 12px;
+    border: 1px #DBDBDB solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    display: inline-flex;
+}
+
+.card-text {
+    align-self: stretch;
+    color: #1B1B1B;
+    font-size: 24px;
+    font-family: Satoshi;
+    font-weight: 500;
+    line-height: 48px;
+    word-wrap: break-word;
+}
+
+.card-fav {
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex;
 }

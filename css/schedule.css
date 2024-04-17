@@ -20,9 +20,16 @@ body {
 nav {
   max-width: 1500px;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  z-index: 1000; 
+  border-bottom: 4px solid #EBEBEB;
 }
 
 nav img {
@@ -102,6 +109,7 @@ nav a {
   cursor: pointer;
   transition: all 0.5s ease;
   margin-left: 1rem;
+  margin-top: 8rem;
 }
 
 .btn button:hover {
@@ -234,6 +242,7 @@ a {
 
 .frame2 {
   margin-left: 5rem;
+  margin-top: 8rem;
 }
 
 .frame2 .btn-group {
@@ -413,6 +422,7 @@ hr {
 
 .daily {
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .submit-btn {
@@ -424,9 +434,7 @@ hr {
   border-radius: 15px;
   cursor: pointer;
   transition: all 0.5s ease;
-  margin-left: 2rem;
-  width: 25rem;
-  margin-top: 1rem;
+  margin-left: 10rem;
 }
 
 .submit-btn:hover {

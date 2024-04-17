@@ -14,7 +14,7 @@
     />
 
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="css/schedule.css" />
+    <link rel="stylesheet" href="css/profile.css" />
 
     <!-- LINK ANIMATION AOS EFFECT -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -24,10 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -35,9 +32,9 @@
     <nav data-aos="fade-down" data-aos-duration="1000">
       <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
       <ul class="nav-link">
-        <li class="link"><a href="#">Afirmasi</a></li>
+        <li class="link"><a href="affirmation.html">Afirmasi</a></li>
         <li class="link"><a href="mood_CheckIn1.html">Mood Check-in</a></li>
-        <li class="link"><a href="#">Pengingat</a></li>
+        <li class="link"><a href="schedule.html">Pengingat</a></li>
       </ul>
 
       <div class="search-bar">
@@ -46,15 +43,15 @@
       </div>
       <span class="material-symbols-outlined"> notifications </span>
       <div class="user-profile">
-        <img src="images/user_profile.png" alt="user" />
+        <a href="profile.html"><img src="images/user_profile.png" alt="user" /></a>
       </div>
     </nav>
 
     <!-- MAIN -->
     <main>
-        <section class="profile">
-            <img src="images/user_profile.png" alt="profile" width="212" height="212">
-            <div class="wrapper">
+      <section class="profile">
+            <img src="images/profile.png" alt="profile" width="212" height="212" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+            <div class="wrapper" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                 <div class="large-text">John Doe</div>
                 <div class="button">
                     <button type="button" class="button-edit">Sunting Profil</button>
@@ -69,7 +66,7 @@
             </div>
         </section>
 
-        <section class="favourite">
+        <section class="favourite" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
             <button type="button" class="button-fav">Tersimpan</button>
             </div>
             <div class="divider"></div>
@@ -91,22 +88,25 @@
 
             </div>
         </section>
+
+
+        
     </main>
 
     <!-- FOOTER & COPYRIGHT -->
 
-    <footer data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+    <footer>
       <div class="content-6">
         <ul class="nav-link">
-          <li class="link"><a href="index.html">Beranda</a></li>
-          <li class="link"><a href="index.html">Tentang Kami</a></li>
-          <li class="link"><a href="index.html">Fitur Kami</a></li>
+          <li id="link1" class="link"><a href="index.html">Beranda</a></li>
+          <li id="link2" class="link"><a href="index.html">Tentang Kami</a></li>
+          <li id="link3" class="link"><a href="index.html">Fitur Kami</a></li>
         </ul>
         <img src="images/logo.png" alt="photo4" />
         <ul class="nav-link">
-          <li class="link"><a href="#">Instagram</a></li>
-          <li class="link"><a href="#">Facebook</a></li>
-          <li class="link"><a href="#">Twitter</a></li>
+          <li id="link1" class="link"><a href="#">Instagram</a></li>
+          <li id="link2" class="link"><a href="#">Facebook</a></li>
+          <li id="link3" class="link"><a href="#">Twitter</a></li>
         </ul>
       </div>
       <hr />
@@ -114,7 +114,6 @@
         <p>Copyright © 2024 Ruang Positif | All Rights Reserved</p>
       </div>
     </footer>
-
     <!-- JS SCROLL ELEMENT -->
     <script src=""></script>
 

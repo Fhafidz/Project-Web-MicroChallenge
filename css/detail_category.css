@@ -20,9 +20,16 @@ body {
 nav {
   max-width: 1500px;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  z-index: 1000; 
+  border-bottom: 4px solid #EBEBEB;
 }
 
 nav img {
@@ -95,12 +102,16 @@ nav a {
   display: flex;
   justify-content: space-between;
   padding: 1rem 3rem;
-  margin-bottom: 3rem;
+  margin-top: 6rem;
+}
+
+.header h3 {
+  margin-left: 5rem;
 }
 
 .header p {
   margin-left: 40rem;
-  margin-right: 6rem;
+  margin-right: 2rem;
 }
 
 .calendar {
