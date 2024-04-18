@@ -1,3 +1,4 @@
+// FUNCTION SMOOTH SCROLL
 function scrollToElement(elementSelector) {
   let element = document.querySelector(elementSelector);
 
@@ -6,12 +7,15 @@ function scrollToElement(elementSelector) {
   }
 }
 
+// VARIABEL UNTUK MENGAMBIL ID
 let link1 = document.getElementById("link1");
 let link2 = document.getElementById("link2");
 let link3 = document.getElementById("link3");
 let link4 = document.getElementById("link4");
 let link5 = document.getElementById("link5");
 
+
+// FITUR SCROLL ELEMENT
 link1.addEventListener("click", () => {
   scrollToElement(".hero1");
 });

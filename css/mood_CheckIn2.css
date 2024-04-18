@@ -1,6 +1,8 @@
 /* IMPORT FONT SATOSHI FROM WEB */
 @import url("https://fonts.cdnfonts.com/css/satoshi");
 
+/* STYLE DEFAULT HALAMAN */
+
 * {
   padding: 0;
   margin: 0;
@@ -103,12 +105,16 @@ nav a {
   margin-left: 1rem;
 }
 
+/* STYLE HEADER KONTEN */
+
 .hero1 {
   text-align: center;
   align-items: center;
   padding: 1rem;
   margin-top: 8rem;
 }
+
+/* STYLE CARD KATA AFIRMASI */
 
 .hero1 .mood {
   margin-top: 2rem;
